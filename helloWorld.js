@@ -1,7 +1,6 @@
-// Camel Case: test.js, hello.js, helloworld.js, myFirstProgram.js
-// Kebab: test.js, hello.js, hello-world.js, my-first-program.js
-// Snake: test.js, hello.js, hello_world.js, my_first_program.js
 
 
-city = "pune"; 
+var city;
+city = "Aurangabad"; 
 console.log(city);
+console.log("my city name is:",city);
