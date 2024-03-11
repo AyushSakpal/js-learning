@@ -6,8 +6,9 @@ console.log("My city name is:", city);
 console.log("What is undefined ?");
 var firstName;
 console.log("First Name variable value before Initialization", firstName);
-firstName="Gajanan";
-console.log("First name:", firstName);
+
+FirstName="Gajanan";
+console.log("First name:", FirstName);
 
 firstName = "Ratan";
 console.log("First name:", first);
