@@ -1,20 +1,20 @@
-
-
-const voteEligibility = age => {
-    if (age <= 0 || age > 130 || age === null) {
-        console.log("Invalid data");
+function voteEligible(age) {
+    if (age <= 0 || age > 130 || isNaN(age)) {
+        console.log('Invalid input', age);
     } else if (age < 18) {
-        console.log('Not eligible for voting');
-    }else{
-        console.log('Eligible for voting');
+        console.log('not eligible for. vote:', age);
+    } else {
+        console.log('eligible for voting', age);
     }
-};
+}
 
-voteEligibility(45);
-voteEligibility(17);
-voteEligibility(8);
-voteEligibility(20);
-voteEligibility(-10);
-voteEligibility(200);
-voteEligibility(0);
-voteEligibility(null);
+
+voteEligible(45);
+voteEligible(17);
+voteEligible(8);
+voteEligible(20);
+voteEligible(-10);
+voteEligible(200);
+voteEligible(0);
+voteEligible(null);
+
