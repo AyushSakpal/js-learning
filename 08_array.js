@@ -45,3 +45,7 @@ for (let index = arrayNums.length-1; index >=0; index--) {
 }
 
 
+console.log(`====== Update elements =========`);
+arrayNumbers[4] = 100;
+console.log(arrayNumbers);
+
