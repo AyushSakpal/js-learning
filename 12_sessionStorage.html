@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Storage</title>
+</head>
+<body>
+    <h2> Session Storage </h2>
+    <script>
+        window.localStorage.setItem("name", "Ayush");
+        window.localStorage.setItem("age", 22);
+        window.localStorage.setItem("city", "Sumbhajinagar");
+        window.localStorage.setItem("pincode:","431136");
+        console.log(window.localStorage.getItem("name"));
+        console.log(window.localStorage.getItem("age"));
+        console.log(window.localStorage.getItem("city"));
+        console.log(window.localStorage.getItem("pincode"));
+
+        const result = window.sessionStorage.getItem("city");
+        console.log(result);
+    </script>
+</body>
+</html>
