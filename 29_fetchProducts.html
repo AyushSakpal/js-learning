@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Products</title>
+</head>
+<body>
+
+    <center><h2>Product List</h2></center>
+    <ol id="productList"></ol>
+    
+    <script>
+        async function fetchProducts(){
+            const productsResponse = await fetch('https://fakestoreapi.com/products');
+            const products = await productsResponse.json();
+
+            const productList = document.querySelector('#productList');
+
+            products.forEach(product => {
+                // Creating li element
+                const liElement = document.createElement('li');
+                liElement.innerHTML = `${product.title} - ${product.price}`;
+                productList.appendChild(liElement);
+            });
+        }
+        fetchProducts();
+    </script>
+</body>
+</html>

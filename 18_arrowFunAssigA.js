@@ -29,3 +29,4 @@ console.log(`Addition of 100, 100, 200, 349, 756, is:: ${sum}`);
 
 const stringSum = add("I am", " learning", "ES6", "features", " in depth");
 console.log(`Addition of I am, learning, ES6, features, in depth, is: ${stringSum}`);
+
